@@ -5,23 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resplonsive.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
 <body>
 
-    <header class="bg-secondary">
+    <header class="sticky-top">
 
         <div class="container">
             <div class="row justify-content-between p-4">
-                <div class="col-4">
+                <div class="col">
                   <h1 class="fw-bold text-light">START BOOTSTRAP</h1>
                 </div>
-                <div class="col-3 align-self-center d-flex justify-content-between">
-                  <a class="text-light">qualcosa</a>
-                  <a class="text-light">qualcosa</a>
-                  <a class="text-light">qualcosa</a>
+                <div class="col d-md-none d-block align-self-center d-flex justify-content-end">
+                    <button button type="button" class="btn btn-outline-light">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <div class="col d-none d-md-block align-self-center">
+                  <ul class="nav-menu list-inline mb-0 text-end text-light">
+                    <li class="list-inline-item">link</li>
+                    <li class="list-inline-item">link</li>
+                    <li class="list-inline-item">link</li>
+                  </ul>
                 </div>
               </div>
         </div>
@@ -32,19 +43,21 @@
 
     <main>
 
-        <section class="title">
+        <section class="title text-light">
             <div class="container">
                 <div class="row justify-content-around">
-                    <div class="col-lg-7 col-sm-9 col-xs-11 align-items-center">
-                        <img class="img-fluid rounded mx-auto d-block" src="https://picsum.photos/id/1076/600/400" alt="">
+                    <div class="col-lg-3 col-sm-6 col-6 align-items-center">
+                        <img class="img-fluid rounded mx-auto d-block" src="img/avatar.svg" alt="">
                     </div>
-                    <h2 class="text-center">START BOOTSTRAP</h2>
+                    <h2 class="text-center mt-4">START BOOTSTRAP</h2>
                     <div class="row justify-content-center">
-                        <div class="col-lg-4 text-center">
-                            <p >tu non puoi passare</p>
+                        <div class="col-lg-4 text-center d-flex justify-content-center my-4">
+                            <div class="divide divide bg-light rounded-pill align-self-center"></div>
+                            <i class="stella fas fa-star fs-3"></i>
+                            <div class="divide bg-light rounded-pill align-self-center"></div>
                          </div>
                     </div>
-                    <p class="text-center">qualcosa di utile</p>
+                    <p class="text-center">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</p>
                 </div>
             </div>
         </section>
@@ -54,27 +67,43 @@
             <div class="container">
                 <h2 class="text-center">PORTFOLIO</h2>
                 <div class="row justify-content-center">
-                    <div class="col-lg-4 text-center">
-                        <p>tu non puoi passare</p>
+                    <div class="col-lg-4 text-center d-flex justify-content-center my-4">
+                        <div class="divide divide bg-dark rounded-pill align-self-center"></div>
+                        <i class="stella fas fa-star fs-3"></i>
+                        <div class="divide bg-dark rounded-pill align-self-center"></div>
                      </div>
                 </div>
-                    <div class="row justify-content-center gy-4">
-                    <div class="col-md-6 col-lg-4 bg-secondary">a</div>
-                    <div class="col-md-6 col-lg-4 bg-secondary">a</div>
-                    <div class="col-md-6 col-lg-4 bg-secondary">a</div>
-                    <div class="col-md-6 col-lg-4 bg-secondary">a</div>
-                    <div class="col-md-6 col-lg-4 bg-secondary">a</div>
-                    <div class="col-md-6 col-lg-4 bg-secondary">a</div>
+                <div class="portfolio-card row justify-content-center gy-4">
+                    <div class="col-md-6 col-lg-4">
+                        <img class="img-fluid mx-auto d-block" src="img/cabin.png" alt="">
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <img class="img-fluid mx-auto d-block" src="img/cake.png" alt="">
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <img class="img-fluid mx-auto d-block" src="img/circus.png" alt="">
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <img class="img-fluid mx-auto d-block" src="img/game.png" alt="">
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <img class="img-fluid mx-auto d-block" src="img/safe.png" alt="">
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <img class="img-fluid mx-auto d-block" src="img/submarine.png" alt="">
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="about">
+        <section class="about text-light">
             <div class="container">
                 <h2 class="text-center">ABOUT</h2>
                 <div class="row justify-content-center">
-                    <div class="col-lg-4 text-center">
-                        <p>tu non puoi passare</p>
+                    <div class="col-lg-4 text-center d-flex justify-content-center my-4">
+                        <div class="divide divide bg-light rounded-pill align-self-center"></div>
+                        <i class="stella fas fa-star fs-3"></i>
+                        <div class="divide bg-light rounded-pill align-self-center"></div>
                      </div>
                 </div>
                 <div class="row justify-content-center g-2">
@@ -86,8 +115,10 @@
                     </div>
                 </div>
                 <div class="row justify-content-center">
-                    <div class="col-lg-4 text-center">
-                        <p>Lorem ipsum?</p>
+                    <div class="col-lg-4 text-center mt-4">
+                        <button type="button" class="btn btn-outline-light">
+                            <i class="fa-solid fa-download"></i> Download
+                        </button>
                      </div>
                 </div>
             </div>
@@ -100,8 +131,10 @@
             <div class="container">
                 <h2 class="text-center">CONTACT</h2>
                 <div class="row justify-content-center">
-                    <div class="col-lg-4 text-center">
-                        <p>tu non puoi passare</p>
+                    <div class="col-lg-4 text-center d-flex justify-content-center my-4">
+                        <div class="divide divide bg-dark rounded-pill align-self-center"></div>
+                        <i class="stella fas fa-star fs-3"></i>
+                        <div class="divide bg-dark rounded-pill align-self-center"></div>
                      </div>
                 </div>
                 <form action="">
@@ -144,7 +177,7 @@
             </div>
         </div>
 
-        <div class=".container-fluid text-center bg-primary">
+        <div class="container-fluid text-center">
             <span>a</span>
         </div>
 

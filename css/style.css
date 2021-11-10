@@ -1,9 +1,35 @@
+:root {
+    --header-bg: rgb(44, 62, 80);
+    --functional-bg: rgb(26, 188, 156);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+header, footer > .container-fluid {
+    background-color: var(--header-bg);
+}
+
 section {
-    padding: 3em 0;
+    padding: 6em 0;
+}
+
+.title, .about {
+    background-color: var(--functional-bg);
+}
+
+.portfolio-card img {
+    border-radius: 20px;
+}
+
+.divide {
+    width: 130px;
+    height: 7px;
+}
+
+.stella {
+    margin: 0 0.5em;
 }
