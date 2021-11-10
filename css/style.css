@@ -9,20 +9,16 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header, footer > .container-fluid {
     background-color: var(--header-bg);
 }
 
 section {
     padding: 6em 0;
-}
-
-.title, .about {
-    background-color: var(--functional-bg);
-}
-
-.portfolio-card img {
-    border-radius: 20px;
 }
 
 .divide {
@@ -33,3 +29,127 @@ section {
 .stella {
     margin: 0 0.5em;
 }
+
+.title-text {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+
+/* header */
+
+.list-inline-item{
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.list-inline-item:hover {
+    color: var(--functional-bg);
+}
+
+/* header */
+
+
+
+/* portfolio */
+
+.title, .about {
+    background-color: var(--functional-bg);
+}
+
+.portfolio-card img {
+    border-radius: 20px;
+}
+
+/* portfolio */
+
+
+
+/* about */
+
+
+/* about */
+
+
+
+/* contact */
+
+form > div > div > div {
+    margin-top: 2em;
+}
+
+.box {
+    border: 0;
+    border-bottom: 1px solid gray;
+    border-radius: 0;
+    font-size: 1.3em;
+    padding: 20px 0;
+}
+
+textarea.box {
+    height: 120px;
+}
+
+.box:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #86b7fe;
+    outline: 0;
+    box-shadow: none;
+}
+
+.box:focus::-webkit-input-placeholder {
+    font-size: 0.75em;
+    position: relative;
+    top: -30px; 
+    transition: 0.2s;
+}
+
+.send {
+    padding: 15px 30px;
+    color: white;
+    background-color: var(--functional-bg);
+}
+
+.send:hover, .send:focus {
+    box-shadow: none;
+    color: white;
+}
+
+/* contact */
+
+
+
+/* footer */
+
+
+footer > .container {
+    padding: 4em 0;
+}
+
+footer > .container p {
+    font-size: 1.2em;
+}
+
+footer > .container p > a {
+    color: var(--functional-bg);
+    text-decoration: none;
+}
+
+.social {
+    border-radius: 50%;
+    padding: 15px 20px;
+}
+
+.social:nth-child(2) {
+    padding: 15px 22px;
+}
+
+.social:nth-child(3) {
+    padding: 15px 17.5px;
+}
+
+/* footer */
+
+
+
