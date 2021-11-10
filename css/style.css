@@ -11,9 +11,10 @@
 
 html {
     font-family: 'Montserrat', sans-serif;
+    font-size: 100%;
 }
 
-header, footer > .container-fluid {
+header, footer > .container-fluid:last-child {
     background-color: var(--header-bg);
 }
 
@@ -141,7 +142,7 @@ textarea.box {
 /* footer */
 
 
-footer > .container {
+footer > .container-fluid:first-child {
     padding: 4em 0;
 }
 
