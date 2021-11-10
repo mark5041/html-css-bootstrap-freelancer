@@ -57,8 +57,26 @@ section {
     background-color: var(--functional-bg);
 }
 
-.portfolio-card img {
+.portfolio-card img, .dark-card {
     border-radius: 20px;
+}
+
+.dark-card {
+    height: 100%;
+    width: calc(100% - 24px);
+    background-color: rgba(26, 188, 156, 0.85);
+    opacity: 0;
+    top: 0;
+    transition: 0.2s;
+}
+
+.fa-plus {
+    font-size: 7em;
+}
+
+.dark-card:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 /* portfolio */
